@@ -1,3 +1,4 @@
+//Sum of N natural no
 #include<stdio.h>
 
 int main(){
