@@ -1,7 +1,8 @@
 //find sum of digits
 #include<stdio.h>
 
-int main(){
+int main
+
     int num, sum = 0, remain;
 
     printf("Enter the number:");
