@@ -2,6 +2,7 @@
 #include<stdio.h>
 
 int main(){
+    
     int num, product = 1, remain;
 
     printf("Enter the number:");
