@@ -2,6 +2,7 @@
 #include<stdio.h>
 
 int main(){
+    
     int num, num1, reverse = 0, remain;
 
     printf("Enter the number:");
