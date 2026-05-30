@@ -1,4 +1,4 @@
-//check prime
+//find prime no in a range
 #include<stdio.h>
 
 int main(){
