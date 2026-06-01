@@ -1,3 +1,4 @@
+//find largest prime factor of given no
 #include<stdio.h>
 
 int isPrime(int n);
