@@ -1,3 +1,4 @@
+//find factors of given no
 #include<stdio.h>
 
 int main(){
