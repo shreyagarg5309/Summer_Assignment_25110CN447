@@ -1,3 +1,4 @@
+//check strong number
 #include<stdio.h>
 
 int factorial(int n);
