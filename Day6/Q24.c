@@ -1,3 +1,4 @@
+//power without using 'pow' function
 #include<stdio.h>
 
 int main(){
