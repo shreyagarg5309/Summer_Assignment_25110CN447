@@ -1,3 +1,4 @@
+//count set bits in a no
 #include<stdio.h>
 
 int main(){
