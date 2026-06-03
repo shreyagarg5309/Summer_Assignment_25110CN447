@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int fibonacci(int n);
+
+int main(){
+    
+    int num, result;
+
+    printf("Enter the position: ");
+    scanf("%d", &num);
+
+    result = fibonacci(num);
+
+    printf("The factorial of entered no is: %d", result);
+
+    return 0;
+}
+
+int fibonacci(int n){
+
+    if(n == 0){
+        return 0;
+    }
+    else if(n == 1){
+        return 1;
+    }
+    else{
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
