@@ -1,3 +1,4 @@
+//half letter triangle
 #include<stdio.h>
 
 int main(){
