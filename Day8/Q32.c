@@ -1,3 +1,4 @@
+//repeated no pattern
 #include<stdio.h>
 
 int main(){
