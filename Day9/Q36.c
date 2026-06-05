@@ -1,3 +1,4 @@
+//print hollow rectangle
 #include<stdio.h>
 
 int main(){
