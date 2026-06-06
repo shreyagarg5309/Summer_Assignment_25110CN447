@@ -1,3 +1,4 @@
+//character pyramid
 #include<stdio.h>
 
 int main(){
