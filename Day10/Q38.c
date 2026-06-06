@@ -1,3 +1,4 @@
+//reverse star pyramid
 #include<stdio.h>
 
 int main(){
