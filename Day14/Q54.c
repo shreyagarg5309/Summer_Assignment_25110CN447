@@ -1,3 +1,4 @@
+//frequency of an element
 #include<stdio.h>
 
 int main(){
