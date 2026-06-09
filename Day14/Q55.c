@@ -1,3 +1,4 @@
+//find second largest no in array
 #include<stdio.h>
 
 int main(){
