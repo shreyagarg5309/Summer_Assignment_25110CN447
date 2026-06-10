@@ -1,3 +1,4 @@
+//right rotation
 #include<stdio.h>
 
 int main(){
