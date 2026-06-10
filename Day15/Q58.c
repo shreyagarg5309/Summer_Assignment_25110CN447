@@ -1,3 +1,4 @@
+//left rotation
 #include<stdio.h>
 
 int main(){
