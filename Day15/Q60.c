@@ -1,3 +1,4 @@
+//move zeroes to the end
 #include<stdio.h>
 
 int main(){
