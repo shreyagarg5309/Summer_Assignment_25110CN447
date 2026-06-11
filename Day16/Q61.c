@@ -1,3 +1,4 @@
+//find missing no
 #include<stdio.h>
 
 int main(){
