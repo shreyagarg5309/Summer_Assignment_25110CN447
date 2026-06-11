@@ -1,3 +1,4 @@
+//remove duplicates
 #include<stdio.h>
 
 int main(){
