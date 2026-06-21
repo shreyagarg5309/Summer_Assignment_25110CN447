@@ -1,3 +1,4 @@
+//compress the string
 #include <stdio.h>
 
 int main() {
