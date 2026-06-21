@@ -1,3 +1,4 @@
+//remove duplicate characters
 #include <stdio.h>
 #include<string.h>
 
