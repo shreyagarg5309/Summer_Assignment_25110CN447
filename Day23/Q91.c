@@ -5,7 +5,6 @@
 int main() {
     
     char str1[100], str2[100];
-    
     int count[256] = {0}, flag = 1; 
 
     printf("String 1: \n");
