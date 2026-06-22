@@ -1,3 +1,4 @@
+//sort words by length
 #include<stdio.h>
 #include<string.h>
 
