@@ -1,3 +1,4 @@
+//sort names alphabetically
 #include<stdio.h>
 #include<string.h>
 
