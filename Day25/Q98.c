@@ -1,3 +1,4 @@
+//find common characters
 #include <stdio.h>
 
 int main() {
