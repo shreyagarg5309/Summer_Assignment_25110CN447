@@ -1,3 +1,4 @@
+//merge arrays
 #include<stdio.h>
 
 int main(){
