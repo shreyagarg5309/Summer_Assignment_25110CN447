@@ -1,3 +1,4 @@
+//quiz application
 #include<stdio.h>
 
 int main(){
