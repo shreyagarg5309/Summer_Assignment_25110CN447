@@ -1,3 +1,4 @@
+//ATM simulation
 #include<stdio.h>
 
 int main(){
