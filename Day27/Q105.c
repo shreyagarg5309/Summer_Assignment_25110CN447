@@ -1,3 +1,4 @@
+//Student management system
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
