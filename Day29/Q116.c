@@ -1,3 +1,4 @@
+//inventory management system
 #include <stdio.h>
 #include <string.h>
 
