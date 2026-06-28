@@ -122,7 +122,7 @@ int main() {
 
             case 4:
                 printf("\nExiting Marksheet System. Goodbye!\n");
-                break;
+                return 0;
 
             default:
                 printf("\nInvalid choice! Please enter a number between 1 and 4\n");
