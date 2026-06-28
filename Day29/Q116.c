@@ -71,7 +71,7 @@ int main() {
                 break;
             case 4:
                 printf("\nExiting Inventory System. Goodbye!\n");
-                break;
+                return 0;
             default:
                 printf("\nInvalid choice! Please select an option between 1 and 4.\n");
         }
