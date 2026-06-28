@@ -109,7 +109,7 @@ int main() {
 
             case 4:
                 printf("\nExiting System\n");
-                break;
+                return 0;
 
             default:
                 printf("Invalid choice! Please enter a number between 1 and 4");
