@@ -55,7 +55,7 @@ int main() {
                 break;
             case 5: 
                 printf("Exiting the program. Goodbye!\n");
-                break;
+                return 0;
             default:
                 printf("Invalid choice! Please select a number between 1 and 5\n");
         }
