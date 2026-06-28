@@ -19,7 +19,6 @@ int main() {
     int choice = 0;
     int targetId, found;
 
-    // 2. Main Menu Loop
     while (choice != 4) {
         printf("SALARY MANAGEMENT SYSTEM\n");
         printf("1. Add Employee Salary Record\n");
