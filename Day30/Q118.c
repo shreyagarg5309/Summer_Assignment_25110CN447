@@ -1,3 +1,4 @@
+//mini library system
 #include <stdio.h>
 #include <string.h>
 
