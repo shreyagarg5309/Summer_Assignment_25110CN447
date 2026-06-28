@@ -174,7 +174,7 @@ int main() {
 
             case 0:
                 printf("\nExiting Library System. Goodbye!\n");
-                break;
+                return 0;
 
             default:
                 printf("\nInvalid choice! Please enter a number between 1 and 6\n");
