@@ -1,3 +1,4 @@
+//complete mini project using arrays, strings and functions
 #include <stdio.h>
 #include <string.h>
 
