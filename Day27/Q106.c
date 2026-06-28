@@ -150,7 +150,7 @@ int main(){
 
             case 6:
                 printf("Exiting System");
-                break;
+                retuen 0;
 
             default:
                 printf("Invalid choice! Please enter a number between 1 and 6");
