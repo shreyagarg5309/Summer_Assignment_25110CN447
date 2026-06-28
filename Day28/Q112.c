@@ -137,7 +137,7 @@ int main() {
 
             case 0:
                 printf("\nExiting System. Goodbye!\n");
-                break;
+                return 0;
 
             default:
                 printf("\nInvalid choice! Please enter a number between 1 and 5\n");
