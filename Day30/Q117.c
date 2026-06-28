@@ -1,3 +1,4 @@
+//student record system using arrays and strings
 #include <stdio.h>
 #include <string.h>
 
