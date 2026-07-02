@@ -8,16 +8,17 @@ int main(){
     printf("Enter the no of rows: ");
     scanf("%d", &num);
 
-    printf("\n");
-
-    printf("*****\n");
-
     for(int i = 1; i <= num; i++){
-        printf("*   *\n");  
+        for(int j = 1; j <= num; j++){
+            if( == 1 || i == row || j == 1 || j == row){
+                System.out.print("* ");
+            }
+            else{
+                System.out.print("  ");
+            }
+        }
+        printf("\n");
     }
-
-    printf("*****\n");
-    printf("\n");
 
     return 0;
 }
