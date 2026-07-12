@@ -3,13 +3,22 @@
 
 int main(){
 
-    int smallNum, largeNum, lcm, gcd;
+    int firstlNum, secondNum, gcd, largeNum, smallNum, lcm;
 
     printf("Enter the smaller no: ");
-    scanf("%d", &smallNum);
+    scanf("%d", &firstNum);
 
     printf("Enter the larger no: ");
-    scanf("%d", &largeNum);
+    scanf("%d", &secondNum);
+
+    if(firstNum > secondNum){
+        largeNum = firstNum;
+        smallNum = secondNum;
+    }
+    else{
+        largeNum = secondNum;
+        smallNum = firstNum;
+    }
     
     for(int i = 1; i <= smallNum; i++){
         if(smallNum % i == 0 && largeNum % i == 0){
