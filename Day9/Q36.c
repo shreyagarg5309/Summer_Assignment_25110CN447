@@ -10,7 +10,7 @@ int main(){
 
     for(int i = 1; i <= num; i++){
         for(int j = 1; j <= num; j++){
-            if( == 1 || i == row || j == 1 || j == row){
+            if(i == 1 || i == row || j == 1 || j == row){
                 System.out.print("* ");
             }
             else{
