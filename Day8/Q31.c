@@ -8,7 +8,7 @@ int main(){
     printf("Enter the last letter to be printed: ");
     scanf("%c", &letter);
 
-    for(char i = 'A'; i <= ; i++){
+    for(char i = 'A'; i <= letter; i++){
         for(char j = 'A'; j <= i; j++){
             printf("%c ", j);
         }
