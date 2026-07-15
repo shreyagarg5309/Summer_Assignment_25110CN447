@@ -15,7 +15,7 @@ int main(){
         if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i]== 'U'){
             vowels++;
         }
-        if((str[i] > 'a' && str[i] <= 'z') || (str[i] > 'A' && str[i] <= 'Z')){
+        else if((str[i] > 'a' && str[i] <= 'z') || (str[i] > 'A' && str[i] <= 'Z')){
             consonants++;
         }
     }
