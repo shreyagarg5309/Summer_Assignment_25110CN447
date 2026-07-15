@@ -4,7 +4,7 @@
 
 int main(){
 
-    char str[100], revStr[100];
+    char str[100];
     int len;
 
     printf("Enter the string: ");
@@ -15,13 +15,15 @@ int main(){
     int j = 0;
 
     while(i >= 0){
-        revStr[j] = str[i];
+        int temp = str[j];
+        str[j] = str[i];
+        str[i] = temp;
         i--;
         j++;
     }
-    revStr[j] = '\0';
+    str[j] = '\0';
 
-    printf("Reversed string is: %s", revStr);
+    printf("Reversed string is: %s", str);
 
     return 0;
 }
