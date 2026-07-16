@@ -20,7 +20,7 @@ int main() {
         if (freq[str[i]] > 1) {
             printf("First repeating character: %c", str[i]);
             found = 1;
-            break;
+            return 0;
         }
     }
 
