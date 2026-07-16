@@ -7,7 +7,7 @@ int main(){
     float balance = 10000.00, amount;
 
     for(int i = 1; i <= 3; i++){
-        printf("Enter the pin(3 - %d attempts left): ", i);
+        printf("Enter the pin(%d attempts left): ", (3-i));
         scanf("%d", &userPin);
         if(pin == userPin){
             printf("Correct pin");
