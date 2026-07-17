@@ -48,7 +48,7 @@ int main(){
                 }
                 printf("\nRoll No", "Name", "Branch", "Marks\n");
                 while (fread(&s, sizeof(struct Students), 1, fp) == 1) {
-                    printf("%d %s %s %f\n", s.rollNum, s.name, s.branch, s.cgpa);
+                    printf("%s %s %s %s\n", s.rollNum, s.name, s.branch, s.cgpa);
                 }
                 fclose(fp);
                 break;
