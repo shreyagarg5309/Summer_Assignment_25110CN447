@@ -61,10 +61,10 @@ int main() {
                     break;
                 }
 
-                printf("\n%-20s %-15s %-25s %-30s\n", "Name", "Phone", "Email", "Address");
+                printf("\n%s %s %s %s\n", "Name", "Phone", "Email", "Address");
                 
                 while (fread(&c, sizeof(struct Contact), 1, fp) == 1) {
-                    printf("%-20s %-15s %-25s %-30s\n", c.name, c.phone, c.email, c.address);
+                    printf("%s %s %s %s\n", c.name, c.phone, c.email, c.address);
                 }
                 
                 fclose(fp);
