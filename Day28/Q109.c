@@ -64,9 +64,9 @@ int main() {
                     break;
                 }
 
-                printf("\n%-5s %-30s %-20s %-10s %-10s\n", "ID", "Title", "Author", "Price", "Status");                
+                printf("\n%s %s %s %s %s\n", "ID", "Title", "Author", "Price", "Status");                
                 while (fread(&b, sizeof(struct Book), 1, fp) == 1) {
-                    printf("%-5d %-30s %-20s %-10.2f %-10s\n", 
+                    printf("%d %s %s %f %s\n", 
                            b.bookId, b.title, b.author, b.price, 
                            (b.isIssued == 0) ? "Available" : "Issued");
                 }
@@ -91,8 +91,8 @@ int main() {
                         printf("ID      : %d\n", b.bookId);
                         printf("Title   : %s\n", b.title);
                         printf("Author  : %s\n", b.author);
-                        printf("Price   : %.2f\n", b.price);
-                        printf("Status  : %s\n", (b.isIssued == 0) ? "Available" : "Issued");
+                        printf("Price   : %f\n", b.price);
+                        printf("Status  : %s\n", (b.isIssued == 0) ? "Available" : "Issued"));
                         found = 1;
                         break;
                     }
