@@ -46,9 +46,9 @@ int main(){
                     printf("No record found");
                     break;
                 }
-                printf("\n%-10s %-20s %-15s %-10s\n", "Employee ID", "Name", "Designation", "Salary");
+                printf("\n%s %s %s %s\n", "Employee ID", "Name", "Designation", "Salary");
                 while (fread(&s, sizeof(struct Employee), 1, fp) == 1) {
-                    printf("%-10d %-20s %-15s %-10.2f\n", s.empID, s.name, s.designation, s.salary);
+                    printf("%d %s %s %f\n", s.empID, s.name, s.designation, s.salary);
                 }
                 fclose(fp);
                 break;
