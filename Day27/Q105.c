@@ -36,7 +36,7 @@ int main(){
                 printf("Enter branch: ");
                 gets(s.branch);
                 printf("Enter cgpa: ");
-                scanf("%f", &cgpa);
+                scanf("%f", &s.cgpa);
                 fwrite(&s, sizeof(struct Students), 1, fp);
                 fclose(fp);
                 break;
@@ -46,9 +46,9 @@ int main(){
                     printf("No record found");
                     break;
                 }
-                printf("\n%-10s %-20s %-15s %-10s\n", "Roll No", "Name", "Branch", "Marks");
+                printf("\nRoll No", "Name", "Branch", "Marks\n");
                 while (fread(&s, sizeof(struct Students), 1, fp) == 1) {
-                    printf("%-10d %-20s %-15s %-10.2f\n", s.rollNum, s.name, s.branch, s.cgpa);
+                    printf("%d %s %s %f\n", s.rollNum, s.name, s.branch, s.cgpa);
                 }
                 fclose(fp);
                 break;
