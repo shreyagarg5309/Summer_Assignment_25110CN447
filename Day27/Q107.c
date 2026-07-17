@@ -61,11 +61,11 @@ int main() {
                     break;
                 }
 
-                printf("\n%-5s %-20s %-15s %-10s %-10s %-10s %-10s\n", 
+                printf("\n%s %s %s %s %s %s %s\n", 
                        "ID", "Name", "Designation", "Basic", "Allow.", "Deduct.", "Net Pay");
                 
                 while (fread(&e, sizeof(struct Employee), 1, fp) == 1) {
-                    printf("%-5d %-20s %-15s %-10.2f %-10.2f %-10.2f %-10.2f\n", 
+                    printf("%d %s %s %f %f %f %f\n", 
                            e.empId, e.name, e.designation, e.basicSalary, e.allowances, e.deductions, e.netSalary);
                 }
                 
@@ -89,10 +89,10 @@ int main() {
                         printf("ID          : %d\n", e.empId);
                         printf("Name        : %s\n", e.name);
                         printf("Designation : %s\n", e.designation);
-                        printf("Basic Salary: %.2f\n", e.basicSalary);
-                        printf("Allowances  : + %.2f\n", e.allowances);
-                        printf("Deductions  : - %.2f\n", e.deductions);
-                        printf("NET SALARY  : %.2f\n", e.netSalary);
+                        printf("Basic Salary: %f\n", e.basicSalary);
+                        printf("Allowances  : + %f\n", e.allowances);
+                        printf("Deductions  : - %f\n", e.deductions);
+                        printf("NET SALARY  : %f\n", e.netSalary);
                         
                         found = 1;
                         break; 
