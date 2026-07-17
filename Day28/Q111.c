@@ -64,11 +64,11 @@ int main() {
                     break;
                 }
 
-                printf("\n%-10s %-20s %-20s %-20s %-10s\n", 
+                printf("\n%s %s %s %s %s\n", 
                        "Ticket ID", "Passenger Name", "Destination", "Transport", "Price");
                 
                 while (fread(&t, sizeof(struct Ticket), 1, fp) == 1) {
-                    printf("%-10d %-20s %-20s %-20s %-10.2f\n", 
+                    printf("%d %s %s %s %f\n", 
                            t.ticketId, t.passengerName, t.destination, t.transportName, t.ticketPrice);
                 }
                 
@@ -93,7 +93,7 @@ int main() {
                         printf("Passenger  : %s\n", t.passengerName);
                         printf("Destination: %s\n", t.destination);
                         printf("Transport  : %s\n", t.transportName);
-                        printf("Price      : %.2f\n", t.ticketPrice);
+                        printf("Price      : %f\n", t.ticketPrice);
                         found = 1;
                         break; 
                     }
