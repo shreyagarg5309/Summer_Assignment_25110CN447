@@ -57,10 +57,10 @@ int main() {
                     break;
                 }
 
-                printf("\n%-15s %-25s %-15s\n", "Account No", "Name", "Balance");
+                printf("\n%s %s %s\n", "Account No", "Name", "Balance");
 
                 while (fread(&a, sizeof(struct Account), 1, fp) == 1) {
-                    printf("%-15d %-25s $%-15.2f\n", a.accNo, a.name, a.balance);
+                    printf("%d %s $%f\n", a.accNo, a.name, a.balance);
                 }
                 
                 fclose(fp);
@@ -79,7 +79,7 @@ int main() {
                 found = 0;
                 while (fread(&a, sizeof(struct Account), 1, fp) == 1) {
                     if (a.accNo == targetAcc) {
-                        printf("\nAccount Found! Current Balance: $%.2f\n", a.balance);
+                        printf("\nAccount Found! Current Balance: $%f\n", a.balance);
                         printf("Enter amount to deposit: ");
                         scanf("%f", &amount);
                         
@@ -88,7 +88,7 @@ int main() {
                         fseek(fp, -(long)sizeof(struct Account), SEEK_CUR);
                         fwrite(&a, sizeof(struct Account), 1, fp);
                         
-                        printf("\nDeposit Successful! New Balance: $%.2f\n", a.balance);
+                        printf("\nDeposit Successful! New Balance: $%f\n", a.balance);
                         found = 1;
                         break;
                     }
@@ -114,7 +114,7 @@ int main() {
                 found = 0;
                 while (fread(&a, sizeof(struct Account), 1, fp) == 1) {
                     if (a.accNo == targetAcc) {
-                        printf("\nAccount Found! Current Balance: $%.2f\n", a.balance);
+                        printf("\nAccount Found! Current Balance: $%f\n", a.balance);
                         printf("Enter amount to withdraw: ");
                         scanf("%f", &amount);
                         
@@ -126,7 +126,7 @@ int main() {
                             fseek(fp, -(long)sizeof(struct Account), SEEK_CUR);
                             fwrite(&a, sizeof(struct Account), 1, fp);
                             
-                            printf("\nWithdrawal Successful! New Balance: $%.2f\n", a.balance);
+                            printf("\nWithdrawal Successful! New Balance: $%f\n", a.balance);
                         }
                         found = 1;
                         break;
